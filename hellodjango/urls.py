@@ -9,7 +9,7 @@ from mysite.views import index_view
 
 urlpatterns = patterns('',
     # Examples:
-    (r'^index/$',index_view)
+    (r'^index/$',index_view),
     # url(r'^$', 'hellodjango.views.home', name='home'),
     # url(r'^hellodjango/', include('hellodjango.foo.urls')),
 
