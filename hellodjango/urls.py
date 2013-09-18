@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.conf.urls.defaults import *
-from mysite.views import index_view
+from principal.views import index_view
 
 
 # Uncomment the next two lines to enable the admin:
