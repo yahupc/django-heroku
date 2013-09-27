@@ -1,5 +1,5 @@
 from django.http import HttpResponse
 
 def index_view(request):
-	html = "Probando Django en Heroku!!!"
+	html = "Probando DJANGO en Heroku!!!"
 	return HttpResponse(html)

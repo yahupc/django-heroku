@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.conf.urls.defaults import *
-from principal.views import index_view
+from principal.views import index_view, post
 
 
 # Uncomment the next two lines to enable the admin:
@@ -10,6 +10,7 @@ from principal.views import index_view
 urlpatterns = patterns('',
     # Examples:
     (r'^index/$',index_view),
+    (r'^post/(\d{1,2})/$', post),
     # url(r'^$', 'hellodjango.views.home', name='home'),
     # url(r'^hellodjango/', include('hellodjango.foo.urls')),
 
