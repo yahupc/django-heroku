@@ -13,6 +13,7 @@ urlpatterns = patterns('',
     # Examples:
     (r'^index/$',index_view),
     (r'^post/(\d{1,2})/$', post),
+    (r'^$','principal.views.lista_bebidas'),
     # url(r'^$', 'hellodjango.views.home', name='home'),
     # url(r'^hellodjango/', include('hellodjango.foo.urls')),
 
