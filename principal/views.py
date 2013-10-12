@@ -35,3 +35,8 @@ def usuarios(request):
 def lista_recetas(request):
 	recetas = Receta.objects.all()
 	return render_to_response('recetas.html',{'datos':recetas},context_instance=RequestContext(request))
+
+def detalle_receta(request, id_receta):
+	dato = get_object_or_404(Receta, pk=id_receta)
+	comentario = Comentario.objects.filter(recetario=dato)
+	return render_to_response('receta.html','comentarios':comentarios,context_instance=RequestContext(request))
