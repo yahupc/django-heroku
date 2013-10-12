@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+	<meta charset='utf-8'>
+	<title>Recetario - {% block titulo %}{% endblock %}</title>
+	<style>
+	{% block style_css &}{% endblock %}
+	</style>
+</head>
+<body>
+	<header>
+		{% block encabezado %}{% endblock%}
+		<nav>
+			<ul>
+				<li><a href="/">Inicio</a></li>
+				<li><a href="/usuario">Usuarios registrados</a></li>
+				<li><a href="/recetas">Recetas</a></li>
+				<li><a href="/sobre">Sobre</a></li>
+			</ul>
+		</nav>
+		<hr>
+	</header>
+	<section class='contenido'>
+		{% block contenido %}{% endblock %}
+	</section>
+	<footer>
+		<p>Proyecto de ejemplo Django en Heroku &copy;2013</p>
+	</footer>
+
+
+</body>
+</html>
