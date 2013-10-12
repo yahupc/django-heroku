@@ -18,6 +18,10 @@ def lista_bebidas(request):
 	bebidas = Bebida.objects.all()
 	return render_to_response('lista_bebidas.html',{'lista':bebidas})
 
-def sobre(reques):
+def sobre(request):
 	html = "<html><body>Proyecto de ejemplo </body></html>"
 	return HttpResponse(html)
+
+def inicio(request):
+	recetas = Recetas.objects.all()
+	return render_to_response('inicio.html',{'recetas':recetas})
