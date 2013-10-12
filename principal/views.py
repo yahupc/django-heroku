@@ -25,3 +25,8 @@ def sobre(request):
 def inicio(request):
 	recetas = Receta.objects.all()
 	return render_to_response('inicio.html',{'recetas':recetas})
+
+def usuarios(request):
+	usuarios = User.objects.all()
+	recetas = Receta.objects.all()
+	return render_to_response('usuarios.html',{'usuarios':usuarios,'recetas':recetas})
