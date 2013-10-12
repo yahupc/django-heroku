@@ -23,5 +23,5 @@ def sobre(request):
 	return HttpResponse(html)
 
 def inicio(request):
-	recetas = Recetas.objects.all()
+	recetas = Receta.objects.all()
 	return render_to_response('inicio.html',{'recetas':recetas})
