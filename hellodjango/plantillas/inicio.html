@@ -1,4 +1,4 @@
-{%extends 'base.html' %}
+{% extends 'base.html' %}
 {% comment %} Aqui van comentarios {% endcomment%}
 {% block titulo %} Inicio {% endblock %}
 {% block sytle_css %}
@@ -8,7 +8,7 @@
 {% block encabezado %}
     <h1>RECETARIO </h1>
 {% endblock %}
-{%block contenido %}
+{% block contenido %}
     <p>
     	Actualmente tenemos registradas:
     	{% with total=recetas.count %}

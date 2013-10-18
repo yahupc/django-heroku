@@ -1,4 +1,4 @@
-{%extends 'base.html' %}
+{% extends 'base.html' %}
 {% comment %} Aqui van comentarios {% endcomment%}
 {% block titulo %} Receta {% endblock %}
 {% block sytle_css %}
@@ -8,7 +8,7 @@
 {% block encabezado %}
     <h1>RECETA - {{receta.titulo}}</h1>
 {% endblock %}
-{%block contenido %}
+{% block contenido %}
 	<h1>{{receta.titulo|title}}</h1>
 	<div id='ingredientes'>
 		<h2>Ingredientes</h2>

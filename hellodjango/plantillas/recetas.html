@@ -1,7 +1,7 @@
 <!-- /*<style>
     img { width: 100px;}
 </style>*/ -->
-{%extends 'base.html' %}
+{% extends 'base.html' %}
 {% comment %} Aqui van comentarios {% endcomment%}
 {% block titulo %} Recetas {% endblock %}
 {% block sytle_css %}
@@ -11,7 +11,7 @@
 {% block encabezado %}
     <h1>RECETAS </h1>
 {% endblock %}
-{%block contenido %}
+{% block contenido %}
 	<h1>Nuestras recetas</h1>
 	<ul>
 		{% for dato in datos %}
