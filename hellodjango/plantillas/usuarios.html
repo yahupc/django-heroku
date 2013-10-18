@@ -9,7 +9,7 @@
     <h1>USUARIOS </h1>
 {% endblock %}
 {% block contenido %}
-	<h1>Colaboradores</h1>
+	<h1>Colaboradores {{MEDIA_URL}}</h1>
 	<ul>
 		{% for dato in usuarios %}
 		<li>{{dato.username}} - <em>{{dato.email}}</em>
