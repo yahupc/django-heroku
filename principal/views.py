@@ -22,7 +22,7 @@ def lista_bebidas(request):
 def sobre(request):
 	# html = "<html><body>Proyecto de ejemplo </body></html>"
 	# return HttpResponse(html)
-	return render_to_response('sobre.html',,context_instance=RequestContext(request))
+	return render_to_response('sobre.html')
 
 def inicio(request):
 	recetas = Receta.objects.all()
