@@ -22,16 +22,16 @@ def lista_bebidas(request):
 def sobre(request):
 	# html = "<html><body>Proyecto de ejemplo </body></html>"
 	# return HttpResponse(html)
-	return render_to_response('sobre.html')
+	return render_to_response('sobre.html',,context_instance=RequestContext(request))
 
 def inicio(request):
 	recetas = Receta.objects.all()
-	return render_to_response('inicio.html',{'recetas':recetas})
+	return render_to_response('inicio.html',{'recetas':recetas},context_instance=RequestContext(request))
 
 def usuarios(request):
 	usuarios = User.objects.all()
 	recetas = Receta.objects.all()
-	return render_to_response('usuarios.html',{'usuarios':usuarios,'recetas':recetas})
+	return render_to_response('usuarios.html',{'usuarios':usuarios,'recetas':recetas},context_instance=RequestContext(request))
 
 def lista_recetas(request):
 	recetas = Receta.objects.all()
