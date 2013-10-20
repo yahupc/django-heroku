@@ -21,6 +21,7 @@ urlpatterns = patterns('',
     (r'^usuarios/$','principal.views.usuarios'),
     (r'^recetas/$','principal.views.lista_recetas'),
     (r'^receta/(?P<id_receta>\d+)$','principal.views.detalle_receta'),
+    (r'^contacto/$','principal.views.contacto'),
     # url(r'^$', 'hellodjango.views.home', name='home'),
     # url(r'^hellodjango/', include('hellodjango.foo.urls')),
 

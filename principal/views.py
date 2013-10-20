@@ -1,9 +1,11 @@
 from principal.models import Receta, Comentario
+from principal.forms import RecetaForm, ComentarioForm, ContactoForm
 from django.contrib.auth.models import User
-from django.http import HttpResponse
-from django.template import RequestContext
-from principal.models import Bebida
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response, get_object_or_404
+from django.template import RequestContext
+from django.core.mail import EmailMessage
+# from principal.models import Bebida
 
 def index_view(request):
 
@@ -41,3 +43,17 @@ def detalle_receta(request, id_receta):
 	dato = get_object_or_404(Receta, pk=id_receta)
 	comentarios = Comentario.objects.filter(receta=dato)
 	return render_to_response('receta.html',{'receta':dato,'comentarios':comentarios},context_instance=RequestContext(request))
+
+def contacto(request):
+	if request.method=='POST':
+		formulario = ContactoForm(request.POST)
+		if formulario.is_valid():
+			titulo = 'Mensaje desde el recetario de Maestros del Web'
+			contenido = formulario.cleaned_data['mensaje'] + "\n"
+			contenido += 'Comunicarse a:' + formulario.cleaned_data['correo']
+			correo = EmailMessage(titulo, contenido, to=['yahu39pc@gmail.com'])
+			correo.send()
+			return HttpResponseRedirect('/')
+		else:
+			formuario = ContactoForm()
+		return render_to_response('contactoform.html',{'formulario':formulario}, context_instance=RequestContext(request))
