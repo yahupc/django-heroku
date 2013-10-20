@@ -69,7 +69,7 @@ def nueva_receta(request):
 	return render_to_response('recetaform.html',{'formulario':formulario},context_instance=RequestContext(request))
 
 def nuevo_comentario(request):
-	if request.method='POST':
+	if request.method=='POST':
 		formulario = ComentarioForm(request.POST)
 		if formulario.is_valid():
 			formulario.save()
