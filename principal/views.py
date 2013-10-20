@@ -57,3 +57,25 @@ def contacto(request):
 	else:
 		formulario = ContactoForm()
 	return render_to_response('contactoform.html',{'formulario':formulario}, context_instance=RequestContext(request))
+
+def nueva_receta(request):
+	if request.method=='POST':
+		formulario = RecetaForm(request.POST, request.FILES)
+		if formulario.is_valid():
+			formulario.save()
+			return HttpResponseRedirect('/recetas')
+	else:
+		formulario = RecetaForm()
+	return render_to_response('recetaform.html',{'formulario':formulario},context_instance=RequestContext(request))
+
+def nuevo_comentario(request):
+	if request.method='POST':
+		formulario = ComentarioForm(request.POST)
+		if formulario.is_valid():
+			formulario.save()
+			return HttpResponseRedirect('/recetas')
+	else:
+		formulario = ComentarioForm()
+	return render_to_response('comentarioform.html',{'formulario'.formulario}, context_instance=RequestContext(request))
+
+			
