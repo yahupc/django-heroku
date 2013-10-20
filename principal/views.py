@@ -56,4 +56,4 @@ def contacto(request):
 			return HttpResponseRedirect('/')
 		else:
 			formuario = ContactoForm()
-		return render_to_response('contactoform.html',{'formulario':formulario}, context_instance=RequestContext(request))
+	return render_to_response('contactoform.html',{'formulario':formulario}, context_instance=RequestContext(request))
