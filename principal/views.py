@@ -54,6 +54,6 @@ def contacto(request):
 			correo = EmailMessage(titulo, contenido, to=['yahu39pc@gmail.com'])
 			correo.send()
 			return HttpResponseRedirect('/')
-		else:
-			formuario = ContactoForm()
+	else:
+		formuario = ContactoForm()
 	return render_to_response('contactoform.html',{'formulario':formulario}, context_instance=RequestContext(request))
