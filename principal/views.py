@@ -1,5 +1,5 @@
 from principal.models import Receta, Comentario
-from principal.forms import RecetaForm, ComentarioForm, ContactoForm
+from principal.forms import ContactoForm
 from django.contrib.auth.models import User
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response, get_object_or_404
