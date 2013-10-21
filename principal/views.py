@@ -86,6 +86,7 @@ def nuevo_comentario(request):
 		formulario = ComentarioForm()
 	return render_to_response('comentarioform.html',{'formulario':formulario}, context_instance=RequestContext(request))
 
+@login_required(login_url='/ingresar')
 def nuevo_usuario(request):
 	if request.method=='POST':
 		formulario = UserCreationForm(request.POST)
