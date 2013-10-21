@@ -34,6 +34,7 @@ header
 	text-align: left;
     position: relative;
     color: #fff;    
+    display: inline-block;
     margin: 1em -10px 10px -10px; 
     background: #5c5c5c url("tottus.png") no-repeat 98% center;
     background-image: -moz-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
@@ -141,7 +142,6 @@ nav ul li a:hover
 }
 #login{
 	text-align: right;
-	color: white;
 }
 
 #login ul li 
@@ -153,8 +153,10 @@ nav ul li a:hover
 
 #login ul li a
 {
+	color: white;
 	display: inline-block;
 	text-decoration: none;
+	margin: 0.5em;
 }
 
 
