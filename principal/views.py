@@ -97,12 +97,12 @@ def nuevo_usuario(request):
 def ingresar(request):
 	if request.method == 'POST':
 		formulario = AuthenticationForm(request.POST)
-		if formulario.is_valid():
+		if formulario.is_valid:
 			usuario = request.POST['username']
 			clave = request.POST['password']
-			acceso = authenticate(username = usuario, password=clave)
+			acceso = authenticate(username=usuario, password=clave)
 			if acceso is not None:
-				if acceso.is_active():
+				if acceso.is_active:
 					login(request, acceso)
 					return HttpResponseRedirect('/privado')
 				else:
