@@ -141,6 +141,12 @@ nav ul li a:hover
 }
 #login{
 	text-align: right;
+	display: inline-block;
+}
+
+#login ul li 
+{
+list-style: none;
 }
 
 #login ul li a
