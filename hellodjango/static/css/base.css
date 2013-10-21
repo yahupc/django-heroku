@@ -141,19 +141,19 @@ nav ul li a:hover
 }
 #login{
 	text-align: right;
-	display: inline-block;
+	color: white;
 }
 
 #login ul li 
 {
-list-style: none;
+	list-style: none;
+	width: auto;
+	display: inline-block;
 }
 
 #login ul li a
 {
-	color: white;
 	display: inline-block;
-	padding: 0.5em 1em;
 	text-decoration: none;
 }
 
