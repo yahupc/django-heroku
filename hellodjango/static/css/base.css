@@ -139,6 +139,19 @@ nav ul li a:hover
 	width: 50%;
 	
 }
+#login{
+	text-align: right;
+}
+
+#login ul li a
+{
+	color: white;
+	display: inline-block;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+
 .contenido
 {
 	background: #FCFCCD;
