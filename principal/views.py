@@ -64,6 +64,7 @@ def contacto(request):
 		formulario = ContactoForm()
 	return render_to_response('contactoform.html',{'formulario':formulario}, context_instance=RequestContext(request))
 
+@login_required(login_url='/ingresar')
 def nueva_receta(request):
 	if request.method=='POST':
 		formulario = RecetaForm(request.POST, request.FILES)
@@ -74,6 +75,7 @@ def nueva_receta(request):
 		formulario = RecetaForm()
 	return render_to_response('recetaform.html',{'formulario':formulario},context_instance=RequestContext(request))
 
+@login_required(login_url='/ingresar')
 def nuevo_comentario(request):
 	if request.method=='POST':
 		formulario = ComentarioForm(request.POST)
