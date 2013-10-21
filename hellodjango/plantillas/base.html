@@ -3,11 +3,15 @@
 <head>
 	<meta charset='utf-8'>
 	<title>Recetario - {% block titulo %}{% endblock %}</title>
+	<link rel="stylesheet" href="{{STATIC_URL}}css/normalize.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/base.css">
+	<link rel="shortcut icon" href="{{STATIC_URL}}img/icono.png">
 	<style>
 	{% block style_css %}{% endblock %}
 	</style>
-	<link rel="stylesheet" href="{{STATIC_URL}}css/normalize.css">
-	<link rel="stylesheet" href="{{STATIC_URL}}css/base.css">
+	<script src='{{STATIC_URL}}js/jquery-1.7.2.min.js'></script>
+	<script src='{{STATIC_URL}}js/demo.js'></script>
+
 </head>
 <body>
 	<div id ="agrupar">
