@@ -187,10 +187,10 @@ nav ul li a:hover
 	
 }
 
-.contenido, #enlaces
+/*.contenido, #enlaces
 {
 	display: inline-block;
-}
+}*/
 @media screen and(max-width:480px ;){
 nav ul li {
     display: block;
