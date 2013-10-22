@@ -191,7 +191,7 @@ nav ul li a:hover
 {
 	display: inline-block;
 }*/
-@media screen and(max-width:480px ;){
+@media screen and(max-width:400px ;){
 nav ul li {
     display: block;
     width: auto !important;
