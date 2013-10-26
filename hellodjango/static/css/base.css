@@ -89,13 +89,12 @@ nav
 	/*margin: 1em ;*/
 	margin: 0 auto;
 	text-align: center;
-	padding: 20 px 0;
+	padding: 20px 0;
 	/*width: auto;*/
 }
 nav ul
 {
-	
-	margin: 0px;
+	padding: 0;
 }
 nav ul li
 {
