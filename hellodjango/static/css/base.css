@@ -191,9 +191,9 @@ nav ul li a:hover
 {
 	display: inline-block;
 }*/
-@media screen and(max-width:400px ;){
-nav ul li {
-    display: block;
-    width: auto !important;
-}
+@media screen and (max-width:480px){
+	nav ul li{
+		display:block;	
+		width:auto !important;
+	}
 }
