@@ -86,19 +86,26 @@ nav
 {
 	background: rgba(29, 66, 124, 0.8);
 	/*border: 1px solid #999999;*/
-	margin: 1em ;
-	padding: 0px;
-	width: auto;
+	/*margin: 1em ;*/
+	margin: 0 auto;
+	text-align: center;
+	padding: 20 px 0;
+	/*width: auto;*/
 }
 nav ul
 {
-	list-style: none;
+	
 	margin: 0px;
 }
 nav ul li
 {
-
 	display: inline-block;
+	list-style: none;
+	padding: 10px;
+	background: gray;
+	margin: 10px;
+	width: 130px;
+	position: relative;
 	
 }
 nav ul li a
