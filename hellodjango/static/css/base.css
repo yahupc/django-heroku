@@ -87,6 +87,7 @@ nav
 	background: rgba(29, 66, 124, 0.8);
 	/*border: 1px solid #999999;*/
 	/*margin: 1em ;*/
+	max-width: 1000px;
 	margin: 0 auto;
 	text-align: center;
 	padding: 20px 0;
@@ -103,19 +104,20 @@ nav ul li
 	display: inline-block;
 	list-style: none;
 	padding: 10px;
-	margin: 10px;
+	margin: 0px;
 	width: 130px;
 	position: relative;
+	transition: all 0.5s ease;
 	
 }
 nav ul li a
 {
-	transition: all 0.5s ease;
 	color: white;
 	text-decoration: none;
+	
 
 }
-nav ul li a:hover
+nav ul li :hover
 {
 	background: white;
 	color: black;
