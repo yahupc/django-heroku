@@ -117,7 +117,7 @@ nav ul li a
 	
 
 }
-nav ul li :hover
+nav ul li:hover
 {
 	background: white;
 	color: black;
