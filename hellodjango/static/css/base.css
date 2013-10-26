@@ -99,10 +99,11 @@ nav ul
 }
 nav ul li
 {
+	background: #201C1D;
+	border-radius: 0.5em;
 	display: inline-block;
 	list-style: none;
 	padding: 10px;
-	background: gray;
 	margin: 10px;
 	width: 130px;
 	position: relative;
@@ -110,14 +111,9 @@ nav ul li
 }
 nav ul li a
 {
-	background: #201C1D;
-	border-radius: 0.5em;
-	color: white;
-	display: inline-block;
-	margin: 0.5em 1em 0.5em 0;
-	padding: 0.5em 1em;
-	text-decoration: none;
 	transition: all 0.5s ease;
+	color: white;
+	text-decoration: none;
 
 }
 nav ul li a:hover
