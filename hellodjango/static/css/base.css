@@ -99,17 +99,17 @@ nav ul
 }
 nav ul li
 {
+	background: #201C1D;
+	border-radius: 0.5em;
 	display: inline-block;
+	margin: 3px;
+	width: 130px;
+	padding: 10px;
 	
 }
 nav li a
 {
-	background: #201C1D;
-	border-radius: 0.5em;
-	list-style: none;
-	padding: 10px;
-	margin: 3px;
-	width: 130px;
+	list-style: none;	
 	position: relative;
 	color: white;
 	text-decoration: none;
