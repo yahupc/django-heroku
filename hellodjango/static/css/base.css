@@ -123,7 +123,7 @@ nav ul li a
 	color: black;
 	transform: scale(1.1);
 }*/
-nav ul li a:hover{
+nav li a:hover{
 		background: white;
 	color: black;
 	transform: scale(1.1);
