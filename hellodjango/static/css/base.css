@@ -117,13 +117,16 @@ nav ul li a
 	
 
 }
-nav ul li:hover
+/*nav ul li:hover
 {
 	background: white;
 	color: black;
 	transform: scale(1.1);
-}
+}*/
 nav ul li a:hover{
+		background: white;
+	color: black;
+	transform: scale(1.1);
 	color: black;
 }
 #agrupar
