@@ -122,6 +122,10 @@ nav li a
 	color: black;
 	transform: scale(1.1);
 }*/
+nav li:hover{
+	background: white;
+	color: black;
+}
 nav li a:hover{
 	background: white;
 	color: black;
