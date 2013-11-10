@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang='es'>
 <head>
 	<meta charset='utf-8'>
@@ -47,3 +47,92 @@
 	</div>
 </body>
 </html>
+ -->
+
+
+
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<title>Recetario - {% block titulo %}{% endblock %}</title>
+		<!-- <link rel="stylesheet" href="{{STATIC_URL}}css/normalize.css"> -->
+		<link rel="stylesheet" href="{{STATIC_URL}}css/demo.css">
+		<!-- <link rel="stylesheet" href="{{STATIC_URL}}css/base.css"> -->
+		<link type="text/css" rel="stylesheet" href="{{STATIC_URL}}css/source/jquery.mmenu.css" />
+		<link type="text/css" rel="stylesheet" href="{{STATIC_URL}}css/source/extensions/jquery.mmenu.widescreen.css" media="all and (min-width: 900px)" />
+		<link type="text/css" rel="stylesheet" href="{{STATIC_URL}}css/source/extensions/jquery.mmenu.themes.css" media="all and (min-width: 900px)" />
+		<link rel="shortcut icon" href="{{STATIC_URL}}img/icono.png">
+		<style>
+		{% block style_css %}{% endblock %}
+		</style>
+				<style type="text/css">
+			@media all and (min-width: 900px) {
+				html, body {
+					height: 100%;
+				}
+				#menu {
+					background: #eee;
+				}
+				#page {
+					border-left: 1px solid #ccc;
+					min-height: 100%;
+				}
+				/* hide open-button */
+				a[href="#menu"]
+				{
+					display: none !important;
+				}
+			}
+		</style>
+<!-- 		// <script src='{{STATIC_URL}}js/jquery-1.7.2.min.js'></script>
+		// <script src='{{STATIC_URL}}js/demo.js'></script>
+		// <script src='{{STATIC_URL}}js/prefixfree.min.js'></script> -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script type="text/javascript" src="{{STATIC_URL}}css/source/jquery.mmenu.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					classes: 'mm-light'
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div id="header">
+				{% block encabezado %}{% endblock%}
+				<a href="#menu"></a>
+			</div>
+			<div id="content">
+				{% block contenido %}{% endblock %}
+				<pre>
+				$.fn.mmenu.debug = function( msg ) {
+				    alert( msg );
+				};
+				</pre>
+			</div>
+			<nav id="menu">
+				<ul>
+<!-- 					<li class="Selected"><a href="index.html">Introduction</a></li>
+					<li><a href="horizontal-submenus.html">Horizontal submenus example</a></li>
+					<li><a href="vertical-submenus.html">Vertical submenus example</a></li>
+					<li><a href="photos.html">Photos in sliding panels</a></li>
+					<li><a href="positions.html">Positioning the menu</a></li>
+					<li><a href="colors.html">Coloring the menu</a></li>
+					<li><a href="advanced.html">Advanced example</a></li>
+					<li><a href="onepage.html">One page scrolling example</a></li>
+					<li><a href="jqmobile/index.html">jQuery Mobile example</a></li> -->
+					<li><a href="/inicio">Inicio</a></li>
+					<li><a href="/usuarios">Usuarios</a></li>
+					<li><a href="/recetas">Recetas</a></li>
+					<li><a href="/comenta">Comenta</a></li>
+					<li><a href="/sobre">Sobre</a></li>
+					<li><a href="/contacto">Contactanos</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>
+
